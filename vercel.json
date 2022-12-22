@@ -1,0 +1,8 @@
+{
+  "builds": [
+    {
+      "src": "./meituan.py",
+      "use": "@vercel/python"
+    }
+  ]
+}
