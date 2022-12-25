@@ -28,9 +28,6 @@ jobs:
           python-version: '3.9'
           cache: 'pip' # caching pip dependencies
       - run: pip install -r requirements.txt
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10' 
       - run: python meituan.py
         env:
           meituantoken: ${{ secrets.meituantoken }}
